@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINTON'S CAFE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:greenyellow ;">
+    <!-- Header Section -->
+    <header>
+     
+        <h1 style="text-align: center;">CLINTON'S CAFE</h1>
+        <p>Welcome to <strong>CLINTON'S CAFE</strong>, a cozy spot known for our homemade meals, delightful ambiance, and warm service. Located in the heart of town, we’re your perfect breakfast, lunch, or coffee break destination!</p>
+    </header>
+
+    <!-- Menu Section -->
+    <section>
+        <h2>Our Menu</h2>
+        <table border="2px">
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Pancakes</td>
+                <td>ksh.150</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Grilled Chicken</td>
+                <td>ksh.500</td>
+            </tr>
+            <tr>
+                <td>Drinks</td>
+                <td>Fresh Lemonade</td>
+                <td>ksh.450</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2 style="text-shadow: 0cqmax; text-decoration-color: blue;">Contact Us</h2>
+        <p>  Address: 133 KOSELE QUAVO STREET, Opposite Equity Bank</p>
+        <p>   Phone: 0714586832</p>
+        <p><a href="mailto:info@clinton.com">Send Email</a></p> 
+        <p><a href="https://www.google.com/maps/place/kosele+Town/@-0.5103808,37.2930389,15z/data=!4m7!3m6!1s0x18288116bc15996f:0x40dca60652b8d302!4b1!8m2!3d-0.5016354!4d37.2788265!16s%2Fg%2F11fhrywvfn?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">Find us on Google Maps</a></p>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
